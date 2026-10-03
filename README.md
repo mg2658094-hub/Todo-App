@@ -24,12 +24,13 @@ A responsive and user-friendly Todo App built with **HTML, CSS, and JavaScript**
 
 ## 📂 Project Structure
 
+```text
 Todo-App/
 ├── index.html
 ├── todo.css
 ├── todo.js
 └── README.md
-
+```
 
 ## 📌 How to Use
 
@@ -44,4 +45,5 @@ Todo-App/
 
 Suggestions and improvements are welcome! Feel free to fork this repository and submit a pull request.
 
+---
 
