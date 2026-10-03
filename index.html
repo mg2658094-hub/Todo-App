@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Use UTF-8 so the page can display different characters correctly -->
+    <meta charset="UTF-8" />
+
+    <!-- Make the website responsive on mobile, tablet, and desktop -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Name shown on the browser tab -->
+    <title>Todo App</title>
+
+    <!-- Connect the CSS file for styling -->
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+
+  <body>
+    <!-- Display the main heading of the Todo App -->
+    <h1 id="main_heading">Todo App</h1>
+
+    <!-- Contains the Todo input box, date input, and Add button -->
+    <div class="grid-container input-container">
+      <!-- Enter the Todo task here -->
+      <input id="todo-input" type="text" placeholder="Enter Todo here" />
+
+      <!-- Select the date for the Todo -->
+      <input id="todo-date" type="date" />
+
+      <!-- Add the Todo when this button is clicked -->
+      <button class="add-button" onclick="addTodo()">Add</button>
+    </div>
+
+    <!-- Added Todo items will be displayed inside this container -->
+    <div class="todo-container grid-container"></div>
+
+    <!-- Connect the JavaScript file to make the Todo App interactive -->
+    <script src="todo.js"></script>
+  </body>
+</html>
