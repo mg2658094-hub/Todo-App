@@ -2,148 +2,148 @@
 
 * {
   box-sizing: border-box;
-  }
+}
 
 /* Page styling */
 body {
-font-family: Arial, sans-serif;
-background: linear-gradient(135deg, #74ebd5, #9face6);
-margin: 0;
-padding: 20px;
-min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
 }
 
 /* Main heading */
 #main_heading {
-text-align: center;
-color: rosybrown;
-font-size: 40px;
-margin-top: 20px;
-margin-bottom: 30px;
+  text-align: center;
+  color: rosybrown;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 /* Grid layout for inputs and Todo items */
 .grid-container {
-display: grid;
-grid-template-columns:
-minmax(0, 2fr)
-minmax(120px, 1fr)
-minmax(80px, 100px);
-column-gap: 10px;
-row-gap: 10px;
-margin-top: 10px;
-width: 100%;
-max-width: 700px;
-margin-left: auto;
-margin-right: auto;
-align-items: center;
+  display: grid;
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(120px, 1fr)
+    minmax(80px, 100px);
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
 /* Todo text and date inputs */
 #todo-input,
 #todo-date {
-width: 100%;
-font-size: 15px;
-padding: 10px 8px;
-border: none;
-border-radius: 4px;
-outline: none;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 8px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
 }
 
 /* Todo list spacing */
 .todo-container {
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* Todo text and date display */
 .todo-container span {
-background-color: white;
-padding: 10px;
-border-radius: 5px;
-border: 1px solid #ddd;
-overflow-wrap: anywhere;
-min-width: 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  overflow-wrap: anywhere;
+  min-width: 0;
 }
 
 /* Add button styling */
 .add-button {
-width: 100%;
-background-color: rgb(46, 129, 19);
-color: white;
-border: none;
-border-radius: 5px;
-padding: 10px 0;
-cursor: pointer;
+  width: 100%;
+  background-color: rgb(46, 129, 19);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
 }
 
 /* Delete button styling */
 .delete-button {
-width: 100%;
-background-color: rgb(175, 28, 28);
-color: white;
-border: none;
-border-radius: 5px;
-padding: 10px 0;
-cursor: pointer;
+  width: 100%;
+  background-color: rgb(175, 28, 28);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
 }
 
 /* Button hover effects */
 .add-button:hover {
-background-color: rgb(38, 108, 16);
+  background-color: rgb(38, 108, 16);
 }
 
 .delete-button:hover {
-background-color: rgb(120, 10, 10);
+  background-color: rgb(120, 10, 10);
 }
 
 /* Responsive layout for mobile screens */
 @media (max-width: 600px) {
-body {
-padding: 15px;
-}
+  body {
+    padding: 15px;
+  }
 
-#main_heading {
-font-size: 32px;
-margin-top: 10px;
-margin-bottom: 25px;
-}
+  #main_heading {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
 
-/* Stack input fields vertically */
-.input-container {
-grid-template-columns: 1fr;
-}
+  /* Stack input fields vertically */
+  .input-container {
+    grid-template-columns: 1fr;
+  }
 
-#todo-input,
-#todo-date,
-.add-button {
-width: 100%;
-}
+  #todo-input,
+  #todo-date,
+  .add-button {
+    width: 100%;
+  }
 
-/* Stack each Todo item, date, and Delete button vertically */
-.todo-container {
-grid-template-columns: 1fr;
-}
+  /* Stack each Todo item, date, and Delete button vertically */
+  .todo-container {
+    grid-template-columns: 1fr;
+  }
 
-.todo-container span {
-font-size: 14px;
-}
+  .todo-container span {
+    font-size: 14px;
+  }
 
-.todo-container .delete-button {
-grid-column: auto;
-}
+  .todo-container .delete-button {
+    grid-column: auto;
+  }
 }
 
 /* Adjust heading for very small screens */
 @media (max-width: 350px) {
-#main_heading {
-font-size: 28px;
-}
+  #main_heading {
+    font-size: 28px;
+  }
 
-.todo-container {
-grid-template-columns: 1fr;
-}
+  .todo-container {
+    grid-template-columns: 1fr;
+  }
 
-.todo-container .delete-button {
-grid-column: auto;
-}
+  .todo-container .delete-button {
+    grid-column: auto;
+  }
 }
