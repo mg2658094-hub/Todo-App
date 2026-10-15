@@ -59,12 +59,17 @@ body {
 
 .add-button {
   width: 100%;
+  min-height: 44px;
   background-color: rgb(46, 129, 19);
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 0;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .delete-button {
