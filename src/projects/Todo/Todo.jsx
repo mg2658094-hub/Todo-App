@@ -49,7 +49,6 @@ export const Todo = () => {
         return curTask;
       }
     });
-
     setTask(updatedTask);
   };
 
@@ -60,7 +59,6 @@ export const Todo = () => {
         <TodoDate />
       </header>
       <TodoForm onAddTodo={handleFormSubmit} />
-
       <section className="myUnordList">
         <ul>
           {task.map((curTask) => {

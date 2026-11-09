@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 
 export const TodoDate = () => {
-
   const [dateTime, setDateTime] = useState("");
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date();

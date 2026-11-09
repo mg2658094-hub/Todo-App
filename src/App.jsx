@@ -1,10 +1,5 @@
-import { Todo } from "./Todo/Todo";
-import "./App.css";
+import { Todo } from "./projects/Todo/Todo";
 
 export const App = () => {
-  return (
-    <section >
-     <Todo/>
-    </section>
-  );
+  return <Todo />;
 };

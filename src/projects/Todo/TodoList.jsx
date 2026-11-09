@@ -13,7 +13,6 @@ export const TodoList = ({
       <button className="check-btn" onClick={() => onHandleCheckedTodo(data)}>
         <MdCheck />
       </button>
-
       <button className="delete-btn" onClick={() => onHandleDeleteTodo(data)}>
         <MdDeleteForever />
       </button>
